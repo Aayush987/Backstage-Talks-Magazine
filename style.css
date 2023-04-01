@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+body {
+    scroll-behavior: smooth;
+    }
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#nav {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    margin: 0px 80px;
+}
+
+#nav > img {
+    width: 250px;
+    }
+#nav > a {
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: large;
+    color: black;
+}
+
+.container {
+    max-height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    overflow: auto;
+    transition: background-color 0.5s ease-out;
+    background-color: white;
+    
+}
+
+
+.image {
+    width: 420px;
+    vertical-align: middle;
+}
+.Book {
+    height: 100vh;
+    max-width: 100%;
+    text-align: center;
+    padding: 30px;
+    scroll-snap-align: center;
+    /* transition: background-color 500ms ease-out; */
+}
+#book2 {
+    background-color: #00c1b5;
+    /* transition: background-color 500ms ease-out; */
+    
+}
+#book3 {
+   background-color: #ff651a;
+   /* transition: background-color 500ms; */
+ 
+}
+#book4 {
+   background-color: #ffbe00;
+   /* transition: background-color 500ms; */
+}
+#book5 { 
+   background-color: #1d3fbb;
+   /* transition: background-color 500ms; */
+    }
+#book6 {
+   background-color: #e30512;
+   /* transition: background-color 500ms; */
+}
