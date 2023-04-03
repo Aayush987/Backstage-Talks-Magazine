@@ -51,7 +51,6 @@ a {
     text-align: center;
     padding: 30px;
     scroll-snap-align: center;
-    /* background-color: #00c1b5; */
     transition: background-color 0.5s ease;
 }
 
@@ -78,11 +77,11 @@ a {
 }
 #book5 { 
    background-color: #1d3fbb;
-   /* transition: background-color 500ms; */
+
     }
 #book6 {
    background-color: #e30512;
-   /* transition: background-color 500ms; */
+   
 }
 
 @media screen and (max-width: 400px) {
