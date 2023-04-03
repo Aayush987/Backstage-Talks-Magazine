@@ -4,6 +4,7 @@
 }
 body {
     scroll-behavior: smooth;
+    background-color: white;
     }
 a {
     text-decoration: none;
@@ -13,7 +14,7 @@ a {
 #nav {
     display: flex;
     justify-content: space-between;
-    position: fixed;
+    position: absolute;
     margin: 0px 80px;
 }
 
@@ -25,6 +26,7 @@ a {
     font-weight: bolder;
     font-size: large;
     color: black;
+    margin-left: 900px;
 }
 
 .container {
@@ -34,9 +36,10 @@ a {
     overflow: auto;
     transition: background-color 0.5s ease-out;
     background-color: white;
-    
 }
-
+.bgcolor {
+    background-color: #00c1b5;
+}
 
 .image {
     width: 420px;
@@ -48,21 +51,30 @@ a {
     text-align: center;
     padding: 30px;
     scroll-snap-align: center;
-    /* transition: background-color 500ms ease-out; */
+    /* background-color: #00c1b5; */
+    transition: background-color 0.5s ease;
 }
+
+
+ 
+@keyframes ex {
+    0% {background-color: white;}
+    16.7% {background-color: #00c1b5;}
+    33.4% {background-color: #ff651a;}
+    50.1% {background-color: #ffbe00;}
+    66.8% {background-color: #1d3fbb;}
+    100% {background-color: #e30512;}
+}
+
 #book2 {
-    background-color: #00c1b5;
-    /* transition: background-color 500ms ease-out; */
-    
+    background-color: #00c1b5;  
 }
 #book3 {
    background-color: #ff651a;
-   /* transition: background-color 500ms; */
- 
 }
 #book4 {
-   background-color: #ffbe00;
-   /* transition: background-color 500ms; */
+   background-color: #ffbe00; 
+ 
 }
 #book5 { 
    background-color: #1d3fbb;
@@ -71,4 +83,23 @@ a {
 #book6 {
    background-color: #e30512;
    /* transition: background-color 500ms; */
+}
+
+@media screen and (max-width: 400px) {
+    #nav > a {
+        margin-left: 0px;
+    }
+
+    #nav > img {
+        width: 90%;
+        object-fit: contain;
+    }
+
+    .Book {
+        max-width: fit-content;
+    }
+
+    .image {
+        width: 100%;
+    }
 }
